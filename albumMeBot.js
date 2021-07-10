@@ -27,7 +27,7 @@ bot.use(LocalSession.middleware())
 //
 
 bot.start((ctx) => {
-  const message = ctx.i18n.t('greeting', {
+  const message = ctx.i18n.t('start', {
     username: ctx.from.username
   })
   return ctx.reply(message, {
